@@ -25,7 +25,7 @@ class User {
         if (is_string($username) && !empty($username)) {
             $this->username = $username;
         } else {
-            echo "❌ Username must be a non-empty string.<br>";
+            echo "Username must be a non-empty string.<br>";
         }
     }
 
@@ -33,7 +33,7 @@ class User {
         if (is_string($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->email = $email;
         } else {
-            echo "❌ Invalid email format.<br>";
+            echo "Invalid email format.<br>";
         }
     }
 
@@ -41,12 +41,12 @@ class User {
         if (is_string($password) && strlen($password) >= 6) {
             $this->password = $password;
         } else {
-            echo "❌ Password must be at least 6 characters long.<br>";
+            echo "Password must be at least 6 characters long.<br>";
         }
     }
 }
 
-// ✅ Пример использования
+//  Пример использования
 $user = new User();
 
 $user->setUsername("john_doe");         // корректно
