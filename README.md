@@ -41,7 +41,7 @@ displayAccountInfo()
 php
 Copy
 Edit
-$account1 = new BankAccount("Иван Иванов", 10000, "0011223344", "KZT");
+$account1 = new BankAccount("Ерасыл Раймхан", 10000, "0011223344", "KZT");
 $account1->deposit(2000);
 $account1->withdraw(3000);
 $account1->displayAccountInfo();
